@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Unofficial UzAuto Motors website">
+    <meta name="author" content="00013975">
+    <title>UzAuto Motors</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://kit.fontawesome.com/90203c31c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--The header of the page-->
+    <header>
+        <nav>
+            <img class="logo" src="https://uzautomotors.com/chevro/images/motors-logo.jpg" alt="UZAUTO MOTORS Logo">
+            <ul>
+                <!--List of pages on the website-->
+                <li><a class="active" href="./Home.html">Home</a></li>
+                <li><a class="active" href="../Models page/Models.html">Models</a></li>
+                <li><a class="active" href="../Prices page/Prices.html">Prices</a></li>
+                <li><a class="active" href="#">Brand</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <!--Navigation icon-->
+            <label id="icon">
+                <i class="fas fa-bars" id="button"></i>
+            </label>
+            <!--Icon and link to the Login page-->
+            <a href="../Login page/Login.html" target="_blank">
+                <div class="icon">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                </div>
+            </a>           
+        </nav>
+    </header>
+    <script src="./Home.JS"></script>
+    <!--The main contentof the page-->
+    <main>
+        <section>
+            <div class="main_slider"></div> 
+                <!--The slider of cars and their short description-->
+                <div class="display-container mySlides">
+                    <img class="Chevrolet" src="./images/Lacetti.jpg" alt="Chevrolet Lacetti Gentra" style="width:100%">
+                    <div class="display-topleft">
+                        <h1>Chevrolet Lacetti</h1>
+                        <h2>Take everything you wish</h2>
+                    </div>
+                </div>
+                <div class="display-container mySlides">
+                    <img class="Chevrolet" src="./images/Malibu.jpg" alt="Chevrolet Malibu"style="width:100%">
+                    <div class="display-bottomright">
+                        <h1>Chevrolet Malibu</h1>
+                        <h2>We will help you lead an active lifestyle</h2>
+                    </div>
+                </div>
+                <div class="display-container mySlides">
+                    <img class="Chevrolet" src="./images/Tahoe.jpg" alt="Chevrolet Tahoe" style="width:100%">
+                    <div class="display-center">
+                        <h1>Chevrolet Tahoe</h1>
+                        <h2>Take care of your family and go wherever you wish</h2>
+                    </div>
+                </div>
+                <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>   
+        </section>
+    </main>
+    <!--Latest news content-->
+    <article>
+        <div class="wholeContent">
+            <div class="centered-title">
+                <h2>The latest news</h2>
+            </div>
+            <div class="newsContainer">
+                <ul>
+                    <li class="first-container">
+                        <img class="news1" src="./images/News1.png" alt="News">
+                        <figcaption>UzAuto Motors, being the largest car manufacturer in the CIS, has confirmed its status as a leader in the region. Today, the 280,000th vehicle rolled off the assembly line of the plant, thereby achieving a historical annual record for the plant in 2020.
+                           It should be noted that this year UzAuto Motors has already broken a production record - for 6 months of 2022, 160,000 cars left the line.
+                        </figcaption>
+                    </li>
+                    <li class="second-container">
+                        <img class="news2" src="./images/News2.png" alt="News">
+                        <figcaption>Exactly 31 years ago, on November 18, 1991, the law "On the State Flag of the Republic of Uzbekistan" was adopted at the extraordinary VII session of the Supreme Council of the Republic of Uzbekistan.
+
+                            On the occasion of this day, a cultural and educational event was organized under the slogan "Flag of the Holy Motherland" in Khorezm regional branch of JSC "UzAuto Motors".
+                            
+                            At the beginning of the event, all those who gathered together sang the National Anthem of Uzbekistan. After that, the managing director of the branch, Sabir Jumaniyazov, opened the festive event with a festive introduction and congratulated all employees on the occasion of the 31st anniversary of the adoption of the state flag - the state symbol.
+                        </figcaption>
+                    </li>
+                    <li class="third-container">
+                        <img class="news3" src="./images/News3.jpg" alt="News">
+                        <figcaption>
+                            It is the human duty of each of us to form respect for the symbol of the nation in the minds of the young generation!
+                        </figcaption>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="video">
+            <video src="https://uzautomotors.com/chevro/video/uzauto-app.mp4" autoplay muted loop></video>
+        </div>
+    </article>
+    <footer id="footer">
+        <div class="containerInfo">
+            <div class="pressCenter">
+                <ul>
+                    <li><h1>Press Center</h1></li>
+                    <li><h2><a href="https://uzautomotors.com/articles">News</a></h2></li>
+                    <li><h2><a href="https://uzautomotors.com/faqs">FAQ</a></h2></li>
+                    <li><h2><a href="https://uzautomotors.com/photo">Photo Gallery</a></h2></li>
+                    <li><h2><a href="https://uzautomotors.com/videos">Video Gallery</a></h2></li>
+                    <li><h2><a href="https://uzautojobs.uz/">Vacancy</a></h2></li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <li><h1>Address</h1></li>
+                    <li><h2>13, A. Temur street, Mirabad district, Tashkent, Uzbekistan</h2></li>
+                    <li><h2>Working hours: 09:00-18:00 <br>
+                        Lunch: 13:00-14:00 <br>
+                        View map</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <h1>Our social media</h1>
+                <div class="facebook">                   
+                    <a href="https://www.facebook.com/UzAutoMotorsOfficial/" target="_blank">
+                        <span class="soc_icon_bg"></span>
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/UzAutoMotorsOfficial/" target="_blank">
+                        <span class="soc_icon_bg"></span>
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://t.me/uzautomotorscom" target="_blank">
+                        <span class="soc_icon_bg"></span>
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/c/uzautomotors" target="_blank">
+                        <span class="soc_icon_bg"></span>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>                   
+                </div>
+            </div>
+        </div>      
+    </footer>
+</body>
+</html>

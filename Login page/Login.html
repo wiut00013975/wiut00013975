@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="Login.css">
+    <script src="Login.JS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+		<h1 class="heading">UzAuto Motors</h1>
+		<h3 class="title">Login & Signup Pages</h3>
+	</header>
+    <div class="form_container">
+        <div class="main_slider"></div>
+		<div class="btns">
+			<button class="login_btn">Login</button>
+			<button class="signup_btn">Signup</button>
+		</div>
+        <section>
+            <div class="login">
+                <form id="login" method="get" action="#">
+                    <label for="username">LogIn</label>  
+                    <input id="username" class="element" type="text" name="username" maxlength="30" required placeholder="Enter your email or username">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="element" name="password" maxlength="20" required placeholder="Enter your password">
+                    <input type="checkbox" class="checkbox" name="checkbox" value="Remember me" required>Rember me
+                    <a href="./Home page/Home.html" target="_blank"><button class="clkbtn">Signup</button></a>                
+                </form>                                 
+            </div>
+            <div class="signup">
+                <form action="#" id="signup" method="get">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="element" id="first_name" placeholder="Enter your name" required>
+                    <label for="your_email">Your email</label>
+                    <input type="email" class="element" id="your_email" placeholder="example@email.com" required>
+                    <label for="create_password">Create a password</label>
+                    <input type="password" class="element" id="create_password" placeholder="Create a password" required>
+                    <label for="confirm_password">Repeat a password</label>
+                    <input type="password" class="element" id="confirm_password" placeholder="Confirm the password" required>
+                    <a href="./Home page/Home.html" target="_blank"><button class="clkbtn">Signup</button></a>                               
+                </form>
+            </div>      
+        </section>                  
+    </div>
+    <script src="Login.JS"></script>       
+</body>
+</html>

@@ -1,0 +1,364 @@
+/*body elements*/
+body{
+    font-family:'ff-zwo-web,arial,sans-serif';
+    height: 200vh;
+    width: 100vw;
+}
+/*header elements*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/*navigation bar size*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+}
+/*logo of UzAuto Motors*/
+img.logo{
+    height: 45px;
+    margin-top: 13px;
+    padding: 0 100px;
+    line-height: 80px;
+}
+/*list of pages on navbar*/
+nav ul{
+    float:right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin:0 8px;
+    line-height: 80px;
+}
+/*links to the pages*/
+nav a{
+    position: relative;
+    color: #a2a2a2;
+    text-decoration: none;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    padding: 7px 10px;
+    /*border: 1px solid greenyellow;*/
+    border-radius: 3px;
+}
+/*red solid border appears when categories hovered over*/
+a.active,a:hover{
+    border: 1px solid red;
+    transition: .5s;
+}
+/*icon of navbar*/
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height:80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+a.icon{
+    color: black;
+    font-size: 30px;
+    line-height:80px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*navigation bar responsive elements*/
+@media (max-width:1048px){
+    img.logo{
+        height: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right:20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width:909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul.active{
+        left: 0%;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border:none;
+        color: #3498db;
+    }
+    nav ul.show{
+       left: 0;
+
+    }
+}
+/*slide container*/
+section.main_slider{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+}
+section img.Chevrolet{
+    background-size: cover;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+/*responsive text of Lacetti*/
+.display-topleft h1{
+    color: #fff !important;
+    padding-top: 30px !important;
+    padding-bottom: 10px;
+    font-size: 4vw !important;
+    position: absolute;
+    left: 5vw;
+    top: 6vw;
+    font-family:'louisbold_italic';
+}
+
+.display-topleft h2{
+    color: #fff !important;
+    font-size: 3.5vw !important;
+    position: absolute;
+    left: 10vw;
+    top: 12vw;
+    font-family:'louisbold_italic';
+}
+/*responsive text of Malibu*/
+.display-bottomright h1{
+    color: #fff !important;
+    font-size: 3.5vw !important;
+    position: absolute;
+    bottom: 120px;
+    right: 100px;
+    font-family:'louisbold_italic';
+}
+.display-bottomright h2{
+    color: #fff !important;
+    font-size: 3.5vw !important;
+    position: absolute;
+    bottom: 70px;
+    right: 60px;
+    font-family:'louisbold_italic';
+}
+/*responsive text of Tahoe*/
+.display-center h1{
+    color: #fff !important;
+    font-size: 3.5vw !important;
+    position: absolute;
+    font-family:'louisbold_italic';
+    top: 17vw;
+    left: 200px;
+}
+.display-center h2{
+    color: #fff !important;
+    font-size: 3.5vw !important;
+    position: absolute;
+    font-family:'louisbold_italic';
+    bottom: 7vw;
+    left: 250px;
+}
+
+label #shot_description{
+    font-family:'louisbold_italic';
+    font-size: 55px;
+    color: #fff;
+    line-height: 55px;
+}
+/*manual slider*/
+.display-left{
+    position: absolute;
+    top: 25vw;
+    left: 0;
+    transform: translate(0% -50%);
+}
+.display-right{
+    position: absolute;
+    top: 25vw;
+    right: 0;
+    transform: translate(0% -50%);
+}
+/*news content*/
+.centered-title{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    color: aqua;
+    font-family:'ff-zwo-web,arial,sans-serif';
+}
+.newsContainer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10vw;
+}
+.first-container{
+    background: #fff;
+    color: #000;
+    font-size: 17px;
+    height: 400px;
+    width: 320px;
+    border-radius: 3px;
+    border: 1px solid #2f3640;
+    margin: 30px;
+    padding: 5px;
+    overflow-wrap: normal;     
+}
+img.news1{
+    width: 100%;
+    height:auto;
+}
+.second-container{
+    background: #fff;
+    color: #000;
+    font-size: 17px;
+    height: 530px;
+    width: 350px;
+    border-radius: 3px;
+    border: 1px solid #2f3640;
+    margin: 30px;
+    padding: 5px;
+    overflow-wrap: normal;
+}
+img.news2{
+    width: 100%;
+    height: auto;
+}
+.third-container{
+    background: #fff;
+    color: #000;
+    font-size: 17px;
+    height: 400px;
+    width: 320px;
+    border-radius: 3px;
+    border: 1px solid #2f3640;
+    margin: 30px;
+    padding: 5px;
+    overflow-wrap: normal;
+}
+img.news3{
+    width: 100%;
+    height: auto;
+}
+video{
+    height: auto;
+    width: 100%;
+}
+/*Footer*/
+#footer{
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background: #191E21;
+    width: 100%;
+    color: #989898;
+    font-size: 13px;
+    display: block;
+}
+.containerInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+}
+.containerInfo a{
+    color: #a2a2a2;
+}
+.containerInfo a:hover{
+    color: #fff;
+}
+.pressCenter ul{
+    color: gray !important;
+    font-family: 'ff-zwo-web,arial,sans-serif';
+}
+/*facebook icon*/
+div a i.fa-facebook{
+    font-size: 30px;
+    color: #a2a2a2;
+}
+div a i.fa-facebook:hover{
+    border: none;
+    color: azure;
+}
+/*instagram icon*/
+div a i.fa-instagram{
+    font-size: 30px;
+    color: #a2a2a2;
+}
+div a i.fa-instagram:hover{
+    border: none;
+    color: azure;
+}
+/*telegram icon*/
+div a i.fa-telegram{
+    font-size: 30px;
+    color: #a2a2a2;
+}
+div a i.fa-telegram:hover{
+    border: none;
+    color: azure;
+}
+/*youtube icon*/
+div a i.fa-youtube{
+    font-size: 30px;
+    color: #a2a2a2;
+}
+div a i.fa-youtube:hover{
+    border: none;
+    color: azure;
+}
+.facebook{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vh;
+
+}
+

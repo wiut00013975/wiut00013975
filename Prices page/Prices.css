@@ -1,0 +1,201 @@
+/*body elements*/
+body{
+    font-family:'ff-zwo-web,arial,sans-serif';
+    height: 200vh;
+    width: 100vw;
+}
+/*header elements*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/*navigation bar size*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+}
+/*logo of UzAuto Motors*/
+img.logo{
+    height: 45px;
+    margin-top: 13px;
+    padding: 0 100px;
+    line-height: 80px;
+}
+/*list of pages on navbar*/
+nav ul{
+    float:right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin:0 8px;
+    line-height: 80px;
+}
+/*links to the pages*/
+nav a{
+    position: relative;
+    color: #a2a2a2;
+    text-decoration: none;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    padding: 7px 10px;
+    /*border: 1px solid greenyellow;*/
+    border-radius: 3px;
+}
+/*red solid border appears when categories hovered over*/
+a.active,a:hover{
+    border: 1px solid red;
+    transition: .5s;
+}
+/*icon of navbar*/
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height:80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+a.icon{
+    color: black;
+    font-size: 30px;
+    line-height:80px;
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*navigation bar responsive elements*/
+@media (max-width:1048px){
+    img.logo{
+        height: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right:20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width:909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul.active{
+        left: 0%;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border:none;
+        color: #3498db;
+    }
+    nav ul.show{
+       left: 0;
+
+    }
+}
+hr{
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(63, 63, 200);
+}
+.heading{
+    text-align: center;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+    color: yellowgreen;
+    font-weight: 500;
+	letter-spacing: 2px;
+    font-size: 3.5vw;
+    color: black;
+    text-transform: uppercase;
+}
+.logo_chevrolet{
+    left: 30px;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .latest_models{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.chevrolet{
+    height: 220px;
+    width: 500px;
+    margin:5px;
+}
+figure img{
+    height: auto;
+    width: 100%;
+    transition: transform .5s;
+}
+figure img:hover{
+    transform: scale(1.1);
+}
+figure hr{
+    height: 2px;
+    
+
+}
