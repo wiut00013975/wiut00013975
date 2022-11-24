@@ -1,0 +1,5 @@
+The following project is designed to the local company that sells automobiles and their detail parts.
+The website is made based on the design of the UzAuto Motors company. It consists of 6 pages which are Home, Models, Prices, About, Brand and Login. 
+In terms of HTML structure, it tried to use semantic tags everywhere where it was necessary. Mainly the standard webpage consists of a header, section and footer with aside sometimes. The article tag became a child of the section. The standards have a description of the use of each tag but not the location and using this author did each product unit as a separate article that is wrapped by section. In the comprehension of the author, this makes the sense as each article contains a different product or theme. Moreover, as the article is separated from the section (it has its concerns about text importance), the article in the project may start with h1 even if h1 was introduced at the start of the section.
+Link to the hosted website: whimsical-crumble-35a5b1.netlify.app
+
