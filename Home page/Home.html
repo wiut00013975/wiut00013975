@@ -7,22 +7,28 @@
     <meta name="title" content="Unofficial UzAuto Motors website">
     <meta name="author" content="00013975">
     <title>UzAuto Motors</title>
-    <link rel="stylesheet" href="Home.css">
-    <script src="https://kit.fontawesome.com/90203c31c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <script src="https://kit.fontawesome.com/90203c31c6.js" type="text/js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--The header of the page-->
+    <div top-header>
+        <h1>
+            This website was created to fulfill Web Technology
+            module's requirements and does not represent an actual company or service
+        </h1>
+    </div>
+    <hr>
     <header>
         <nav>
             <img class="logo" src="https://uzautomotors.com/chevro/images/motors-logo.jpg" alt="UZAUTO MOTORS Logo">
             <ul>
                 <!--List of pages on the website-->
-                <li><a class="active" href="./Home.html">Home</a></li>
-                <li><a class="active" href="../Models page/Models.html">Models</a></li>
-                <li><a class="active" href="../Prices page/Prices.html">Prices</a></li>
-                <li><a class="active" href="#">Brand</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="../Models page/Models.html">Models</a></li>
+                <li><a href="../Prices page/Prices.html">Prices</a></li>
+                <li><a href="../Brand page/Brand.html">Brand</a></li>
+                <li><a href="../Aboutus/About.html">About</a></li>
             </ul>
             <!--Navigation icon-->
             <label id="icon">
@@ -37,6 +43,7 @@
         </nav>
     </header>
     <script src="./Home.JS"></script>
+    <hr>
     <!--The main contentof the page-->
     <main>
         <section>
@@ -44,24 +51,12 @@
                 <!--The slider of cars and their short description-->
                 <div class="display-container mySlides">
                     <img class="Chevrolet" src="./images/Lacetti.jpg" alt="Chevrolet Lacetti Gentra" style="width:100%">
-                    <div class="display-topleft">
-                        <h1>Chevrolet Lacetti</h1>
-                        <h2>Take everything you wish</h2>
-                    </div>
                 </div>
                 <div class="display-container mySlides">
                     <img class="Chevrolet" src="./images/Malibu.jpg" alt="Chevrolet Malibu"style="width:100%">
-                    <div class="display-bottomright">
-                        <h1>Chevrolet Malibu</h1>
-                        <h2>We will help you lead an active lifestyle</h2>
-                    </div>
                 </div>
                 <div class="display-container mySlides">
                     <img class="Chevrolet" src="./images/Tahoe.jpg" alt="Chevrolet Tahoe" style="width:100%">
-                    <div class="display-center">
-                        <h1>Chevrolet Tahoe</h1>
-                        <h2>Take care of your family and go wherever you wish</h2>
-                    </div>
                 </div>
                 <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="display-right" onclick="plusDivs(1)">&#10095;</button>

@@ -7,7 +7,7 @@
     <meta name="title" content="Unofficial UzAuto Motors website">
     <meta name="author" content="00013975">
     <title>UzAuto Motors</title>
-    <link rel="stylesheet" href="Prices.css">
+    <link rel="stylesheet" type="text/js" href="Prices.css">
     <script src="https://kit.fontawesome.com/90203c31c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,12 +17,11 @@
             <img class="logo" src="https://uzautomotors.com/chevro/images/motors-logo.jpg" alt="UZAUTO MOTORS Logo">
             <ul>
                 <!--List of pages on the website-->
-                <li><a class="active" href="../Home page/Home.html">Home</a></li>
-                <li><a class="active" href="../Models page/Models.html">Models</a></li>
-                <li><a class="active" href="./Prices.html">Prices</a></li>
-                <li><a class="active" href="#">Brand</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="../Home page/Home.html">Home</a></li>
+                <li><a href="../Models page/Models.html">Models</a></li>
+                <li><a href="./Prices.html">Prices</a></li>
+                <li><a href="../Brand page/Brand.html">Brand</a></li>
+                <li><a href="../Aboutus/About.html">About</a></li>
             </ul>
             <!--Navigation icon-->
             <label id="icon">
@@ -167,22 +166,71 @@
                 <figure class="chevrolet">
                     <img src="./Prices_images/Tahoe_red.png" alt="Red Chevrolet Tahoe">
                     <figcaption>Chevrolet Tahoe</figcaption>
-                    <input type="button" value="Generate Table" onclick="GenerateTable()"><hr>
+                    <input type="button" value="Generate Table" onclick="GenerateTable()"/><hr>
                     <div id="dvTable"></div>
                 </figure>
+                <script src="./Prices.js"></script>
                 <figure class="chevrolet">
                     <img src="./Prices_images/Malibu_black.jpg" alt="Black Chevrolet Malibu">
                     <figcaption>Chevrolet Malibu</figcaption>
-                    <input type="button" value="Generate Table" onclick="GenerateTable()"><hr>
-                    <div id="dvTable"></div>
+                    <input type="button" value="Generate Table" onclick="GenerateTable()"/><hr>
+                    <div id="malibuTable"></div>
                 </figure>
+                <script src="./Prices.js"></script>
                 <figure class="chevrolet">
                     <img src="./Prices_images/Equinox_Red.jpg" alt="Red Chevrolet Equinox">
                     <figcaption>Chevrolet Equinox</figcaption>
-                    <input type="button" value="Generate Table" onclick="GenerateTable()"><hr>
-                    <div id="dvTable"></div>
+                    <input type="button" value="Generate Table" onclick="GenerateTable()"/><hr>
+                    <div id="equinoxTable"></div>
                 </figure>
-            </div>
-            
+                <script src="./Prices.js"></script>
+            </div> 
         </main>       
     </section>
+    <footer id="footer">
+      <div class="containerInfo">
+          <div class="pressCenter">
+              <ul>
+                  <li><h1>Press Center</h1></li>
+                  <li><h2><a href="https://uzautomotors.com/articles">News</a></h2></li>
+                  <li><h2><a href="https://uzautomotors.com/faqs">FAQ</a></h2></li>
+                  <li><h2><a href="https://uzautomotors.com/photo">Photo Gallery</a></h2></li>
+                  <li><h2><a href="https://uzautomotors.com/videos">Video Gallery</a></h2></li>
+                  <li><h2><a href="https://uzautojobs.uz/">Vacancy</a></h2></li>
+              </ul>
+          </div>
+          <div class="address">
+              <ul>
+                  <li><h1>Address</h1></li>
+                  <li><h2>13, A. Temur street, Mirabad district, Tashkent, Uzbekistan</h2></li>
+                  <li><h2>Working hours: 09:00-18:00 <br>
+                      Lunch: 13:00-14:00 <br>
+                      View map</h2>
+                  </li>
+              </ul>
+          </div>
+          <div class="socialMedia">
+              <h1>Our social media</h1>
+              <div class="facebook">                   
+                  <a href="https://www.facebook.com/UzAutoMotorsOfficial/" target="_blank">
+                      <span class="soc_icon_bg"></span>
+                      <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/UzAutoMotorsOfficial/" target="_blank">
+                      <span class="soc_icon_bg"></span>
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://t.me/uzautomotorscom" target="_blank">
+                      <span class="soc_icon_bg"></span>
+                      <i class="fa-brands fa-telegram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/c/uzautomotors" target="_blank">
+                      <span class="soc_icon_bg"></span>
+                      <i class="fa-brands fa-youtube"></i>
+                  </a>                   
+              </div>
+          </div>
+      </div>      
+  </footer>
+</body>
+</html>

@@ -1,8 +1,9 @@
 /*body elements*/
 body{
     font-family:'ff-zwo-web,arial,sans-serif';
-    height: 200vh;
+    height: 180vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 /*header elements*/
 *{
@@ -174,7 +175,7 @@ figure a img:hover{
 }
 /*Footer*/
 #footer{
-    padding: 20px;
+    padding: 0;
     position: relative;
     overflow: hidden;
     background: #191E21;

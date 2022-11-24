@@ -1,10 +1,3 @@
-.top-header{
-    height: 4rem;
-    font-size: 2rem;
-    text-align: justify;
-    background-color: #3498db;
-    color: #a2a2a2;
-}
 /*body elements*/
 body{
     font-family:'ff-zwo-web,arial,sans-serif';
@@ -138,162 +131,73 @@ hr{
     width: 100vw;
     background-color: rgb(63, 63, 200);
 }
-/*slide container*/
-section.main_slider{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    z-index: 10;
-    position: relative;
-}
-section img.Chevrolet{
-    background-size: cover;
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-}
-/*responsive text of Lacetti*/
-.display-topleft h1{
-    color: #fff !important;
-    padding-top: 30px !important;
-    padding-bottom: 10px;
-    font-size: 4vw !important;
-    position: absolute;
-    left: 5vw;
-    top: 6vw;
-    font-family:'louisbold_italic';
-}
-
-.display-topleft h2{
-    color: #fff !important;
-    font-size: 3.5vw !important;
-    position: absolute;
-    left: 10vw;
-    top: 12vw;
-    font-family:'louisbold_italic';
-}
-/*responsive text of Malibu*/
-.display-bottomright h1{
-    color: #fff !important;
-    font-size: 3.5vw !important;
-    position: absolute;
-    bottom: 120px;
-    right: 100px;
-    font-family:'louisbold_italic';
-}
-.display-bottomright h2{
-    color: #fff !important;
-    font-size: 3.5vw !important;
-    position: absolute;
-    bottom: 70px;
-    right: 60px;
-    font-family:'louisbold_italic';
-}
-/*responsive text of Tahoe*/
-.display-center h1{
-    color: #fff !important;
-    font-size: 3.5vw !important;
-    position: absolute;
-    font-family:'louisbold_italic';
-    top: 17vw;
-    left: 200px;
-}
-.display-center h2{
-    color: #fff !important;
-    font-size: 3.5vw !important;
-    position: absolute;
-    font-family:'louisbold_italic';
-    bottom: 7vw;
-    left: 250px;
-}
-
-label #shot_description{
-    font-family:'louisbold_italic';
-    font-size: 55px;
-    color: #fff;
-    line-height: 55px;
-}
-/*manual slider*/
-.display-left{
-    position: absolute;
-    top: 25vw;
-    left: 0;
-    transform: translate(0% -50%);
-}
-.display-right{
-    position: absolute;
-    top: 25vw;
-    right: 0;
-    transform: translate(0% -50%);
-}
-/*news content*/
-.centered-title{
+.heading{
     text-align: center;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+    color: yellowgreen;
+    font-weight: 500;
+	letter-spacing: 2px;
+    font-size: 2.5vw;
+    color: rgb(83, 82, 82);
     text-transform: uppercase;
-    display: block;
-    font-size: 30px;
-    padding: 20px;
-    color: aqua;
-    font-family:'ff-zwo-web,arial,sans-serif';
 }
-.newsContainer ul{
+main{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: #a2a2a2;
+}
+div.text{
+    border: 1px solid rgb(83, 82, 82);
+    font-size: 18px;
+    display: inline-block;
+    color: #a2a2a2;
+    background-color: #2f3640;
+    border-radius: 10px;
+    padding: 20px 25px;
+    height: 40rem;
+    width: 35rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow:12px 20px 12px black;
+}
+.history{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    width: 50%;
     align-items: center;
-    padding-top: 10vw;
+    margin-top: 2rem;
 }
-.first-container{
-    background: #fff;
-    color: #000;
-    font-size: 17px;
-    height: 400px;
-    width: 320px;
-    border-radius: 3px;
-    border: 1px solid #2f3640;
-    margin: 30px;
-    padding: 5px;
-    overflow-wrap: normal;     
+.img-history{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content:space-between;
+    margin-top: 30px;
 }
-img.news1{
-    width: 100%;
-    height:auto;
+.chevrolet{
+    height: 15rem;
+    width: 18rem;
+    transition: transform .5s;
 }
-.second-container{
-    background: #fff;
-    color: #000;
-    font-size: 17px;
-    height: 530px;
-    width: 350px;
-    border-radius: 3px;
-    border: 1px solid #2f3640;
-    margin: 30px;
-    padding: 5px;
-    overflow-wrap: normal;
+.chevrolet:hover{
+    transform: scaleX(1.2);
 }
-img.news2{
-    width: 100%;
-    height: auto;
+.chevrolet img{
+    box-shadow: 8px 12px 8px black;
 }
-.third-container{
-    background: #fff;
-    color: #000;
-    font-size: 17px;
-    height: 400px;
-    width: 320px;
-    border-radius: 3px;
-    border: 1px solid #2f3640;
-    margin: 30px;
-    padding: 5px;
-    overflow-wrap: normal;
-}
-img.news3{
-    width: 100%;
-    height: auto;
-}
-video{
-    height: auto;
-    width: 100%;
+.heading2{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(83, 82, 82);
 }
 /*Footer*/
 #footer{
@@ -301,9 +205,10 @@ video{
     position: relative;
     overflow: hidden;
     background: #191E21;
-    width: 100%;
+    width: 100vw;
     color: #989898;
     font-size: 13px;
+    margin: 0;
     display: block;
 }
 .containerInfo{
@@ -311,13 +216,10 @@ video{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
     padding-bottom: 40px;
     padding-top: 40px;
     position: relative;
     margin: 0 auto;
-    max-width: 1170px;
     width: 100%;
 }
 .containerInfo a{
@@ -374,4 +276,3 @@ div a i.fa-youtube:hover{
     padding: 2vh;
 
 }
-
